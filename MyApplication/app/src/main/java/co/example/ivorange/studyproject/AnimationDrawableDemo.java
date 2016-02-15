@@ -12,7 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-public class MainActivity extends Activity {
+public class AnimationDrawableDemo extends Activity {
 
 	private ImageView mImageFrame;
 	private AnimationDrawable mAnimationDrable;
