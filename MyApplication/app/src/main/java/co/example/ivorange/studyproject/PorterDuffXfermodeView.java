@@ -70,7 +70,6 @@ public class PorterDuffXfermodeView extends View {
 		// 从canvas层面去除锯齿
 		canvas.setDrawFilter(mDrawFilter);
 		canvas.drawColor(Color.TRANSPARENT);
-
         /*
          * 将绘制操作保存到新的图层
          */

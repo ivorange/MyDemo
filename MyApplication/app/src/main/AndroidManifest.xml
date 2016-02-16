@@ -27,6 +27,11 @@
         <activity android:name=".WhaleAnimation" >
         </activity>
         <activity android:name=".DigitalDemo" >
+        </activity>
+        <activity android:name=".CanvesDemo" >
+
+        </activity>
+        <activity android:name=".CanvesClipDemo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
