@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.example.ivorange.studyproject" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,12 +14,16 @@
             android:name=".AnimationDrawableDemo"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
-
         </activity>
         <activity
             android:name=".LogoTitleDemo"
             android:label="@string/title_activity_logo_title_demo"
             android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".FaceDemo" >
+
+        </activity>
+        <activity android:name=".ImageLoaderDemo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
