@@ -21,9 +21,12 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity android:name=".FaceDemo" >
-
         </activity>
         <activity android:name=".ImageLoaderDemo" >
+        </activity>
+        <activity android:name=".WhaleAnimation" >
+        </activity>
+        <activity android:name=".DigitalDemo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

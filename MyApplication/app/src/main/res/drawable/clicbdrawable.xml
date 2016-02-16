@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip
+    android:drawable="@drawable/whale_full" android:clipOrientation="vertical" android:gravity="bottom"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+</clip>

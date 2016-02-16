@@ -4,13 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
-    <Gallery
-        android:layout_width="match_parent"
-        android:id="@+id/gallery_demo"
-        android:layout_gravity="center"
-        android:layout_height="match_parent">
-    </Gallery>
+   >
 
-
+  <co.example.ivorange.studyproject.PorterDuffXfermodeView
+      android:layout_width="match_parent"
+      android:layout_gravity="center"
+      android:layout_height="300dp"/>
 </FrameLayout>
