@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   >
-
-  <co.example.ivorange.studyproject.PorterDuffXfermodeView
-      android:layout_width="match_parent"
-      android:layout_gravity="center"
-      android:layout_height="300dp"/>
+    >
+    <Button
+        android:layout_width="300dp"
+        android:id="@+id/btn_add"
+        android:layout_gravity="center"
+        android:text="Add_Use_Reflect"
+        android:layout_height="200dp"/>
 </FrameLayout>

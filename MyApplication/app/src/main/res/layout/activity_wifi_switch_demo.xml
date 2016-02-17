@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/btn_wifi"
+            android:text="WIFI"
+            android:layout_height="80dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/btn_NetWork"
+            android:text="NetWork"
+            android:layout_height="80dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/btn_Air"
+            android:text="AirMode"
+            android:layout_height="80dp"/>
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/btn_BlueTooth"
+            android:text="BlueTooth"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+
+</FrameLayout>

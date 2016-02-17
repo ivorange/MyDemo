@@ -3,6 +3,17 @@
     package="co.example.ivorange.studyproject" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -26,12 +37,16 @@
         </activity>
         <activity android:name=".WhaleAnimation" >
         </activity>
-        <activity android:name=".DigitalDemo" >
-        </activity>
         <activity android:name=".CanvesDemo" >
-
         </activity>
         <activity android:name=".CanvesClipDemo" >
+        </activity>
+        <activity android:name=".WaterDemo" >
+        </activity>
+        <activity android:name=".WifiSwitchDemo" >
+
+        </activity>
+        <activity android:name=".ReflactAction" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
