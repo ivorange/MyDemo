@@ -40,7 +40,7 @@ public class LauncherAppsDemo extends AppCompatActivity {
 		for (UserHandle user:mUserManager.getUserProfiles()){
 			mAllApps=mLauncherApps.getActivityList(null,user);
 			for (int i=0;i<mAllApps.size();i++){
-				Log.d("app_name","...."+mAllApps.get(i).getName());
+				Log.d("app_name","...."+mAllApps.get(i).getComponentName());
 			}
 		}
 	}

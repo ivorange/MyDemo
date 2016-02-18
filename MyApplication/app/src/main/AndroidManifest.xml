@@ -14,6 +14,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <application
         android:allowBackup="true"
@@ -51,15 +53,29 @@
             android:name=".ToastDemo"
             android:label="@string/title_activity_toast_demo"
             android:theme="@style/AppTheme.NoActionBar" >
-
         </activity>
         <activity android:name=".LauncherAppsDemo" >
+        </activity>
+        <activity android:name=".SarializaDemoActive" >
+        </activity>
+        <activity
+            android:name=".FilesUpLoadDemo"
+            android:label="@string/title_activity_files_up_load_demo"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".AlarmManagerActivity" >
+
+        </activity>
+        <activity android:name=".ServiceActivityDemo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+       <service android:name=".ServiceDemo">
+
+       </service>
     </application>
 
 </manifest>

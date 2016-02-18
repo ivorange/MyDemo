@@ -1,10 +1,14 @@
 package co.example.ivorange.studyproject;
 
 import android.bluetooth.BluetoothAdapter;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
+import android.os.Build;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -80,15 +84,41 @@ public class WifiSwitchDemo extends AppCompatActivity {
 		mBtnNewtWork.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				if(getMobileDataState(getApplicationContext())){
-					setMobileData(getApplicationContext(),false);
-				}else{
-					setMobileData(getApplicationContext(),true);
+//				if(getMobileDataState(getApplicationContext())){
+//					setMobileData(getApplicationContext(),false);
+//				}else{
+//					setMobileData(getApplicationContext(),true);
+//				}
+				if(Build.VERSION.SDK_INT>10){
+					Intent intent=new Intent(android.provider.Settings.ACTION_WIRELESS_SETTINGS);
+					startActivity(intent);
+				}else {
+					Intent intent=new Intent();
+					intent.setComponent(new ComponentName("com.android.settings", "com.android" +
+							".settings.WirelessSettings"));
+					intent.setAction("android.intent.action.VIEW");
+					startActivity(intent);
 				}
 			}
 		});
 
+		if(isConn(getApplicationContext())){
+			mBtnNewtWork.setBackgroundColor(Color.WHITE);
+		}else {
+			mBtnNewtWork.setBackgroundColor(Color.GRAY);
+		}
 
+
+	}
+
+	public static boolean isConn(Context context){
+		boolean bisConnFlag=false;
+		ConnectivityManager conManager = (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo network = conManager.getActiveNetworkInfo();
+		if(network!=null){
+			bisConnFlag=conManager.getActiveNetworkInfo().isAvailable();
+		}
+		return bisConnFlag;
 	}
 
 	public static void setMobileData(Context pContext, boolean pBoolean) {

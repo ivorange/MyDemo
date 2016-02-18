@@ -45,12 +45,7 @@ public class ImageLoaderDemo extends AppCompatActivity {
 	}
 
 	public void initImageLoader() {
-		imageUrls = new String[]{"http://pic.pptbz.com/pptpic/201511/2015111858890897.jpg",
-				"http://static.oschina.net/uploads/space/2014/1102/105150_o9WG_699232.png",
-				"http://www.kwstu.com/Content/uploadFiles/images/20140406140008281.jpg",
-				"http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1207/16/c0" +
-						"/12347883_1342409469167.jpg", "http://pic5.nipic" +
-				".com/20100112/1295091_184248499552_2.jpg"};
+		imageUrls = new String[]{"http://myweb-10021579.file.myqcloud.com/android/renlian.jpg"};
 		config = new ImageLoaderConfiguration
 				.Builder(getApplicationContext())
 				.memoryCacheExtraOptions(480, 800) // max width, max height，即保存的每个缓存文件的最大长宽

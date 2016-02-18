@@ -26,4 +26,5 @@ dependencies {
     compile 'com.android.support:design:23.1.0'
     compile files('libs/faceppsdk.jar')
     compile files('libs/android-async-http-1.4.4.jar')
+    compile files('libs/qcloud_fr_android_sdk.jar')
 }
