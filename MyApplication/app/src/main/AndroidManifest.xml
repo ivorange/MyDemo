@@ -64,7 +64,6 @@
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity android:name=".AlarmManagerActivity" >
-
         </activity>
         <activity android:name=".ServiceActivityDemo" >
             <intent-filter>
@@ -73,9 +72,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       <service android:name=".ServiceDemo">
 
-       </service>
+        <service android:name=".ServiceDemo"
+            >
+        </service>
+
     </application>
 
 </manifest>

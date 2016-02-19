@@ -43,6 +43,7 @@ public class ServiceDemo extends Service {
 	public void onCreate() {
 		super.onCreate();
 		Log.d("service", "onCreate()");
+
 	}
 
 	@Nullable
