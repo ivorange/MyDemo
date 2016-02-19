@@ -143,27 +143,27 @@ public class WifiSwitchDemo extends AppCompatActivity {
 		}
 	}
 
-	public static boolean getMobileDataState(Context pContext) {
-
-		try {
-
-			ConnectivityManager mConnectivityManager = (ConnectivityManager) pContext.getSystemService(Context.CONNECTIVITY_SERVICE);
-
-			Class ownerClass = mConnectivityManager.getClass();
-
-			Method method = ownerClass.getMethod("getMobileDataEnabled", null);
-
-			Boolean isOpen = (Boolean) method.invoke(mConnectivityManager, null);
-
-			return isOpen;
-
-		} catch (Exception e) {
-			// TODO: handle exception
-
-			System.out.println("得到移动数据状态出错");
-			return false;
-		}
-
-	}
+//	public static boolean getMobileDataState(Context pContext) {
+//
+//		try {
+//
+//			ConnectivityManager mConnectivityManager = (ConnectivityManager) pContext.getSystemService(Context.CONNECTIVITY_SERVICE);
+//
+//			Class ownerClass = mConnectivityManager.getClass();
+//
+//			Method method = ownerClass.getMethod("getMobileDataEnabled", null);
+//
+//			Boolean isOpen = (Boolean) method.invoke(mConnectivityManager, null);
+//
+//			return isOpen;
+//
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//
+//			System.out.println("得到移动数据状态出错");
+//			return false;
+//		}
+//
+//	}
 
 }

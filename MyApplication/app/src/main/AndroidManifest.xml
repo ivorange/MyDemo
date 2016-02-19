@@ -66,17 +66,24 @@
         <activity android:name=".AlarmManagerActivity" >
         </activity>
         <activity android:name=".ServiceActivityDemo" >
+
+        </activity>
+
+        <service android:name=".ServiceDemo" >
+        </service>
+        <service android:name=".remoteservice.RemoteService" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.android.aidl.action.MY_REMOTE_SERVICE"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name=".remoteservice.RemoteServiceActive" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service android:name=".ServiceDemo"
-            >
-        </service>
-
     </application>
 
 </manifest>

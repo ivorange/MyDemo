@@ -3,9 +3,6 @@ package co.example.ivorange.studyproject;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.os.RemoteException;
-
-import java.util.logging.Handler;
 
 /**
  * Created by ivorange on 16/2/19.
