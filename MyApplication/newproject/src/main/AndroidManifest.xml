@@ -9,15 +9,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity android:name=".MainActivity" >
+        </activity>
+
+        <provider
+            android:name=".DemoProvider"
+            android:authorities="co.example.ivorange.newproject.DemoProvider" />
+
+        <activity android:name=".GestureTestDemo" >
+        </activity>
+        <activity android:name=".ListViewUseCheckBox" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <provider
-            android:authorities="co.example.ivorange.newproject.DemoProvider"
-            android:name=".DemoProvider"></provider>
+        <activity android:name=".reference.RoundDrawable" >
+
+        </activity>
     </application>
 
 </manifest>
