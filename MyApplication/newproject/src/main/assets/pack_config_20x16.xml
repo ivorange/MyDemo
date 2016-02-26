@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<themepack>
+    <!-- 模板版本号 -->
+    <version>1</version>
+    <!-- 模板描述 -->
+    <description>这是模板4类型</description>
+    <!-- 默认模板分辨率 -->
+    <density>1280,720</density>
+    <!-- 模板型号 -->
+    <templateMode>1004</templateMode>
+    <!-- 是否有底座 -->
+    <hashotseat>true</hashotseat>
+    <!--  底座所占百分比 -->
+    <hotseatHeight>16</hotseatHeight>
+    <hotseatCount>3</hotseatCount>
+    <!-- 背景 -->
+    <background>icon/workspace_background.jpg</background>
+    <!-- workspace 分块 20x16 -->
+    <grid>20,16</grid>
+    <!-- 此处定义和viewgroup里面定义不一样  20行,16列 -->
+    <!-- 第一页内容 -->
+    <!-- 每页有三种类型view: 1.快捷方式:shortcut  2.文件夹:folder 3.自定义view:widget 4.viewGroup -->
+    <screen>
+        <page>0</page>
+        <!-- 搜索框 -->
+        <!--第四套模板-->
+        <widget>
+            <cell>1,0,14,2</cell>
+            <!-- 此wiget的id -->
+            <appId>1301</appId>
+            <!-- 包名+类名-->
+            <component>###/###.widget.SearchBarWidget5</component>
+            <!-- 多个widget的型号 -->
+            <type>1001</type>
+            <!-- 资源路径 -->
+            <resourceDir>icon/search/</resourceDir>
+        </widget>
+
+        <widget>
+            <cell>3,2,10,8</cell>
+            <!-- 此wiget的id -->
+            <appId>1300</appId>
+            <!-- 包名+类名-->
+            <component>###/###.widget.DigitalClockWidget5</component>
+            <!-- 多个widget的型号 -->
+            <type>1001</type>
+            <resourceDir>icon/weather/</resourceDir>
+        </widget>
+
+        <!-- 里面包含一组快捷方式等 -->
+        <ViewGroup>
+            <cell>1,10,14,10</cell>
+            <grid>14,6</grid>
+            <appId>3001</appId>
+            <type>1001</type>
+            <class_name>###.view.CustomizeItemGroupView</class_name>
+            <title_color>#ffffff</title_color>
+
+            <shortcut>
+                <cell>0,0,7,2</cell>
+                <!-- 默认选择 -->
+                <component>###/###.ThemeSwitcherActivity</component>
+                <!-- 打开Intent -->
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/launcher_theme_icon.png</custom_icon>
+                <original_title>THEME CENTER</original_title>
+                <original_title lang="zh_cn">主题中心</original_title>
+                <original_title lang="ru_ru">Tема центр</original_title>
+                <original_title lang="pt_br">Tema centro</original_title>
+                <title_color>#ffffff</title_color>
+                <systemApp>true</systemApp>
+                <type>1001</type>
+            </shortcut>
+            <shortcut>
+                <cell>7,0,7,2</cell>
+                <appId>1004</appId>
+                <!-- 默认选择 -->
+                <component>
+                    com.android.browser/com.android.browser.BrowserActivity
+                </component>
+                <!-- 打开Intent -->
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_BROWSER;end
+                </intent>
+                <custom_icon>icon/chrome_icon.png</custom_icon>
+                <original_title>WEB</original_title>
+                <original_title lang="zh_cn">浏览器</original_title>
+                <original_title lang="ru_ru">браузер</original_title>
+                <original_title lang="pt_br">Navegador</original_title>
+                <systemApp>true</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1001</type>
+            </shortcut>
+
+            <!-- facebook -->
+            <shortcut>
+                <cell>0,2,7,2</cell>
+                <component>com.facebook.katana/com.facebook.katana.LoginActivity</component>
+                <!-- 打开Intent -->
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/facebook_icon.png</custom_icon>
+                <original_title>FACEBOOK</original_title>
+                <systemApp>false</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1001</type>
+                <download_url>https://play.google.com/store/apps/details?id=com.facebook.katana
+                </download_url>
+            </shortcut>
+            <!-- camera -->
+            <shortcut>
+                <cell>7,2,7,2</cell>
+                <!-- 默认选择 -->
+                <appId>1002</appId>
+                <component>
+                    com.android.camera/com.android.camera.Camera
+                </component>
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/camera_icon.png</custom_icon>
+                <original_title>CAMERA</original_title>
+                <original_title lang="zh_cn">相机</original_title>
+                <original_title lang="ru_ru">Kамера</original_title>
+                <original_title lang="pt_br">Câmera</original_title>
+                <systemApp>true</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1001</type>
+            </shortcut>
+
+            <!-- Contact -->
+            <shortcut>
+                <cell>0,4,7,2</cell>
+                <appId>1005</appId>
+                <!-- 默认选择 -->
+                <component>
+                    com.google.android.contacts/com.android.contacts.activities.PeopleActivity
+                </component>
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/contact_icon.png</custom_icon>
+                <original_title>CONTACT</original_title>
+                <original_title lang="zh_cn">联系人</original_title>
+                <original_title lang="ru_ru">Kонтакты</original_title>
+                <original_title lang="pt_br">Contactos</original_title>
+                <systemApp>true</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1001</type>
+            </shortcut>
+
+            <!--相册  -->
+            <shortcut>
+                <cell>7,4,7,2</cell>
+                <appId>1001</appId>
+                <!-- 默认选择 -->
+                <component>
+                    com.google.android.apps.photos/com.google.android.apps.photos.home.HomeActivity
+                </component>
+                <!-- 打开Intent -->
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/gallery_icon.png</custom_icon>
+                <original_title>GALLERY</original_title>
+                <original_title lang="zh_cn">相册</original_title>
+                <original_title lang="ru_ru">Фотогалерея</original_title>
+                <original_title lang="pt_br">Galeria de fotos</original_title>
+                <systemApp>true</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1001</type>
+            </shortcut>
+        </ViewGroup>
+    </screen>
+    <screen>
+        <page>1</page>
+        <background>#CC000000</background>
+        <appId>4001</appId>
+        <!--<widget>-->
+            <!--<cell>1,1,14,2</cell>-->
+            <!--&lt;!&ndash; 此wiget的id &ndash;&gt;-->
+            <!--<appId>1301</appId>-->
+            <!--&lt;!&ndash; 包名+类名&ndash;&gt;-->
+            <!--<component>###/###.widget.SearchBarWidget2</component>-->
+            <!--&lt;!&ndash; 多个widget的型号 &ndash;&gt;-->
+            <!--<type>1001</type>-->
+            <!--&lt;!&ndash; 资源路径 &ndash;&gt;-->
+            <!--<resourceDir>icon/search/</resourceDir>-->
+        <!--</widget>-->
+        <ViewGroup>
+            <appId>3002</appId>
+            <cell>0,1,16,7</cell>
+            <grid>14,10</grid>
+            <type>1001</type>
+            <class_name>###.view.CustomizeItemGroupView</class_name>
+            <original_title>Useful Shortcuts</original_title>
+            <original_title lang="zh_cn">常用快捷</original_title>
+            <original_title lang="ru_ru">сочетания</original_title>
+            <original_title lang="pt_br">atalhos</original_title>
+            <custom_icon>icon/application_title_icon.png</custom_icon>
+            <title_color>#ffffff</title_color>
+            <background>icon/viewgroup_bg.9.png</background>
+
+            <!-- whatsap的快捷方式 -->
+            <shortcut>
+                <cell>1,1,3,4</cell>
+                <component>com.whatsapp/com.whatsapp.Main</component>
+                <!-- 打开Intent -->
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/whatsapp_icon.png</custom_icon>
+                <original_title>Whatsapp</original_title>
+                <systemApp>false</systemApp>
+                <title_color>#ffffff</title_color>
+                <download_url>https://play.google.com/store/apps/details?id=com.whatsapp
+                </download_url>
+                <!-- 快捷方式的类型 -->
+                <type>1002</type>
+            </shortcut>
+            <!-- 壁纸 -->
+            <shortcut>
+                <cell>4,1,3,4</cell>
+                <!-- 默认选择 -->
+                <component>###/###.function.wallpaper.WallpaperActivity</component>
+                <!-- 打开Intent -->
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/wallpaper_icon.png</custom_icon>
+                <original_title>Wallpaper</original_title>
+                <original_title lang="zh_cn">壁纸</original_title>
+                <original_title lang="ru_ru">Oбои</original_title>
+                <original_title lang="pt_br">Papel de parede</original_title>
+                <title_color>#ffffff</title_color>
+                <systemApp>true</systemApp>
+                <!-- 快捷方式的类型 -->
+                <type>1002</type>
+            </shortcut>
+
+            <!-- Google Play -->
+            <shortcut>
+                <cell>7,1,3,4</cell>
+                <component>com.android.vending/com.android.vending.AssetBrowserActivity</component>
+                <!-- 打开Intent -->
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/google_play_icon.png</custom_icon>
+                <original_title>Google Play</original_title>
+                <systemApp>true</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1002</type>
+            </shortcut>
+
+            <!-- Settings -->
+            <shortcut>
+                <cell>10,1,3,4</cell>
+                <appId>1003</appId>
+                <component>com.google.android.apps.maps/com.google.android.maps.MapsActivity
+                </component>
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/map_icon.png</custom_icon>
+                <original_title>MAP</original_title>
+                <original_title lang="zh_cn">地图</original_title>
+                <original_title lang="ru_ru">Kарта</original_title>
+                <original_title lang="pt_br">Mapa</original_title>
+                <systemApp>false</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1002</type>
+                <download_url>
+                    https://play.google.com/store/apps/details?id=com.google.android.apps.maps
+                </download_url>
+            </shortcut>
+
+            <shortcut>
+                <cell>1,6,3,4</cell>
+                <appId>1008</appId>
+                <!-- 默认选择 -->
+                <component>
+                    com.android.calculator2/com.android.calculator2.Calculator
+                </component>
+                <!-- 打开Intent -->
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_BROWSER;end
+                </intent>
+                <custom_icon>icon/calculator_icon.png</custom_icon>
+                <original_title>Calculator</original_title>
+                <original_title lang="zh_cn">计算器</original_title>
+                <original_title lang="ru_ru">Kалькулятор</original_title>
+                <original_title lang="pt_br">Calculadora</original_title>
+                <systemApp>true</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1002</type>
+            </shortcut>
+            <!-- calendar -->
+            <shortcut>
+                <cell>4,6,3,4</cell>
+                <appId>1009</appId>
+                <!-- 默认选择 -->
+                <component>
+                    com.google.android.calendar/com.android.calendar.LaunchActivity
+                </component>
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/calendar_icon.png</custom_icon>
+                <original_title>Calendar</original_title>
+                <original_title lang="zh_cn">日历</original_title>
+                <original_title lang="ru_ru">Kалендарь</original_title>
+                <original_title lang="pt_br">Calendário</original_title>
+                <systemApp>true</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1002</type>
+            </shortcut>
+
+            <!-- Clock -->
+            <shortcut>
+                <cell>7,6,3,4</cell>
+                <appId>1010</appId>
+                <!-- 默认选择 -->
+                <component>
+                    com.google.android.deskclock/com.android.deskclock.DeskClock
+                </component>
+                <!-- 打开Intent -->
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_BROWSER;end
+                </intent>
+                <custom_icon>icon/clock_icon.png</custom_icon>
+                <original_title>Clock</original_title>
+                <original_title lang="zh_cn">时钟</original_title>
+                <original_title lang="ru_ru">часы</original_title>
+                <original_title lang="pt_br">Relógio</original_title>
+                <systemApp>true</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1002</type>
+            </shortcut>
+            <!-- Download -->
+            <shortcut>
+                <cell>10,6,3,4</cell>
+                <appId>1011</appId>
+                <!-- 默认选择 -->
+                <component>
+                    com.android.providers.downloads.ui/com.android.providers.downloads.ui.DownloadList
+                </component>
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/download_icon.png</custom_icon>
+                <original_title>Download</original_title>
+                <original_title lang="zh_cn">下载</original_title>
+                <original_title lang="ru_ru">Cкачать</original_title>
+                <original_title lang="pt_br">Baixar</original_title>
+                <systemApp>true</systemApp>
+                <title_color>#ffffff</title_color>
+                <type>1002</type>
+            </shortcut>
+
+        </ViewGroup>
+        <ViewGroup>
+            <appId>3003</appId>
+            <cell>0,9,16,4</cell>
+            <grid>14,6</grid>
+            <type>1001</type>
+            <class_name>###.view.CustomizeItemGroupView</class_name>
+            <original_title>More</original_title>
+            <original_title lang="zh_cn">其他</original_title>
+            <original_title lang="ru_ru">Больше</original_title>
+            <original_title lang="pt_br">Mais</original_title>
+            <custom_icon>icon/application_title_icon.png</custom_icon>
+            <title_color>#ffffff</title_color>
+            <background>icon/viewgroup_bg.9.png</background>
+            <!-- Launcher settings -->
+            <shortcut>
+                <cell>1,1,3,5</cell>
+                <component>###/###.function.settings.SettingActivity</component>
+                <!-- 打开Intent -->
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/launcher_settings_icon.png</custom_icon>
+                <original_title>Launcher \nSettings</original_title>
+                <original_title lang="zh_cn">桌面设置</original_title>
+                <original_title lang="ru_ru">Параметры рабочего стола</original_title>
+                <original_title lang="pt_br">Configurações de desktop</original_title>
+                <title_color>#ffffff</title_color>
+                <systemApp>true</systemApp>
+                <type>1002</type>
+            </shortcut>
+            <!-- map -->
+            <shortcut>
+                <cell>4,1,3,5</cell>
+                <appId>1007</appId>
+                <component>
+                    com.android.settings/com.android.settings.Settings
+                </component>
+                <intent>
+                    #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+                </intent>
+                <custom_icon>icon/settings_icon.png</custom_icon>
+                <original_title>Settings</original_title>
+                <original_title lang="zh_cn">设置</original_title>
+                <original_title lang="ru_ru">Cоздавать</original_title>
+                <original_title lang="pt_br">Estabelecer</original_title>
+                <!-- 背景 -->
+                <systemApp>true</systemApp>
+                <!-- 文字颜色 -->
+                <title_color>#ffffff</title_color>
+                <type>1002</type>
+            </shortcut>
+        </ViewGroup>
+
+
+    </screen>
+
+    <hotseat>
+        <appId>3000</appId>
+        <grid>3,1</grid>
+        <shortcut>
+            <cell>0,0,1,1</cell>
+            <appId>1012</appId>
+            <component>com.android.contacts/.activities.DialtactsActivity</component>
+            <intent>
+                #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;component=com.android.contacts/.activities.DialtactsActivity;end
+            </intent>
+            <custom_icon>icon/phone_icon.png</custom_icon>
+            <original_title>Phone</original_title>
+            <systemApp>true</systemApp>
+            <title_color>#ffffff</title_color>
+            <type>1004</type>
+        </shortcut>
+        <shortcut>
+            <cell>1,0,1,1</cell>
+            <appId>1304</appId>
+            <!-- 包名+类名-->
+            <component>###/###.widget.NormalModeView</component>
+            <intent>
+                #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;end
+            </intent>
+            <!-- 多个widget的型号 -->
+            <type>1004</type>
+            <original_title>All apps</original_title>
+            <systemApp>true</systemApp>
+            <custom_icon>icon/all_apps_icon.png</custom_icon>
+            <title_color>#ffffff</title_color>
+        </shortcut>
+        <shortcut>
+            <cell>2,0,1,1</cell>
+            <appId>1013</appId>
+            <!-- 包名+类名-->
+            <component>com.android.mms/com.android.mms.ui.ConversationList</component>
+            <intent>
+                #Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MESSAGING;end
+            </intent>
+            <type>1004</type>
+            <original_title>Message</original_title>
+            <custom_icon>icon/message_icon.png</custom_icon>
+            <title_color>#ffffff</title_color>
+        </shortcut>
+    </hotseat>
+</themepack>

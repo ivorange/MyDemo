@@ -22,9 +22,31 @@
         <activity android:name=".reference.RoundDrawable" >
         </activity>
         <activity android:name=".reference.ReferenceActiive" >
-
         </activity>
         <activity android:name=".InstanceState.InstanceActive" >
+        </activity>
+        <activity android:name=".drawingCache.DrawingCacheActive" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Interfacedemo.InterfaceDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".singleTask.standardDemo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".parsexmldemo.ParseXmlActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -28,7 +28,6 @@ public class InstanceActive extends AppCompatActivity {
 
 	}
 
-
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
 		outState.putString(SAVE_TEXT, "........");

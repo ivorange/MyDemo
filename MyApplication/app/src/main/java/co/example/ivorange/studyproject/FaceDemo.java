@@ -11,6 +11,7 @@ import org.apache.http.Header;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.lang.ref.WeakReference;
 
 
 public class FaceDemo extends AppCompatActivity {
@@ -26,6 +27,7 @@ public class FaceDemo extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
 		setContentView(R.layout.activity_face_demo);
 		httpClient = new AsyncHttpClient();
 		httpClient.post(getURL(), new AsyncHttpResponseHandler() {
