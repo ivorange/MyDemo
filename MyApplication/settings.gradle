@@ -1,1 +1,1 @@
-include ':app', ':newproject', ':actioneventdemo', ':singletaskdemo', ':androidgcdemo'
+include ':app', ':newproject', ':actioneventdemo', ':singletaskdemo', ':androidgcdemo', ':newprocessdemo'
